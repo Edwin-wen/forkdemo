@@ -1,0 +1,356 @@
+2026-01-07 14:30:50.209   827-827   Looper                  pid-827                              E  Thread identity changed from 0x284340007db8 to 0x28434000033b while dispatching to android.view.ViewRootImpl$ViewRootHandler android.view.View$UnsetPressedState@4c26178 what=0
+2026-01-07 14:30:50.211   827-827   ProcessState            pid-827                              A  libbinder ProcessState can not be used after fork
+2026-01-07 14:30:50.225   827-827   .edwin.forkdemo         pid-827                              A  runtime.cc:708] Runtime aborting...
+                                                                                                    runtime.cc:708] All threads:
+                                                                                                    runtime.cc:708] DALVIK THREADS (27):
+                                                                                                    runtime.cc:708] "main" prio=10 tid=1 Runnable
+                                                                                                    runtime.cc:708]   | group="" sCount=0 ucsCount=0 flags=0 obj=0x72f8a438 self=0xb4000079a80d1be0
+                                                                                                    runtime.cc:708]   | sysTid=32184 nice=-10 cgrp=default sched=0/0 handle=0x7bbe789d28
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x7fd24c5000-0x7fd24c7000 stackSize=8188KB
+                                                                                                    runtime.cc:708]   | held mutexes= "abort lock" "mutator lock"(shared held)
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32184: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   at android.os.Parcel.nativeWriteStrongBinder(Native method)
+                                                                                                    runtime.cc:708]   at android.os.Parcel.writeStrongBinder(Parcel.java:1285)
+                                                                                                    runtime.cc:708]   at android.app.IActivityManager$Stub$Proxy.handleApplicationWtf(IActivityManager.java:8061)
+                                                                                                    runtime.cc:708]   at com.android.internal.os.RuntimeInit.wtf(RuntimeInit.java:443)
+                                                                                                    runtime.cc:708]   at android.util.Log$1.onTerribleFailure(Log.java:135)
+                                                                                                    runtime.cc:708]   at android.util.Log.wtf(Log.java:343)
+                                                                                                    runtime.cc:708]   at android.util.Log.wtf(Log.java:300)
+                                                                                                    runtime.cc:708]   at android.os.Looper.loopOnce(Looper.java:294)
+                                                                                                    runtime.cc:708]   at android.os.Looper.loop(Looper.java:337)
+                                                                                                    runtime.cc:708]   at android.app.ActivityThread.main(ActivityThread.java:9577)
+                                                                                                    runtime.cc:708]   at java.lang.reflect.Method.invoke(Native method)
+                                                                                                    runtime.cc:708]   at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:593)
+                                                                                                    runtime.cc:708]   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "FinalizerWatchdogDaemon" prio=5 tid=7 Waiting
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77980440 self=0xb4000079a80f9b90
+                                                                                                    runtime.cc:708]   | sysTid=32192 nice=4 cgrp=default sched=0/0 handle=0x78e1b126b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78e1a0f000-0x78e1a11000 stackSize=1037KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32192: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   at java.lang.Object.wait(Native method)
+                                                                                                    runtime.cc:708]   - waiting on <0x042840b6> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+                                                                                                    runtime.cc:708]   at java.lang.Object.wait(Object.java:405)
+                                                                                                    runtime.cc:708]   at java.lang.Object.wait(Object.java:543)
+                                                                                                    runtime.cc:708]   at java.lang.Daemons$FinalizerWatchdogDaemon.sleepUntilNeeded(Daemons.java:464)
+                                                                                                    runtime.cc:708]   - locked <0x042840b6> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+                                                                                                    runtime.cc:708]   at java.lang.Daemons$FinalizerWatchdogDaemon.runInternal(Daemons.java:444)
+                                                                                                    runtime.cc:708]   at java.lang.Daemons$Daemon.run(Daemons.java:131)
+                                                                                                    runtime.cc:708]   at java.lang.Thread.run(Thread.java:1012)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "ReferenceQueueDaemon" prio=5 tid=8 Waiting
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x779804c0 self=0xb4000079a80d37b0
+                                                                                                    runtime.cc:708]   | sysTid=32190 nice=4 cgrp=default sched=0/0 handle=0x78e1d326b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78e1c2f000-0x78e1c31000 stackSize=1037KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32190: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   at java.lang.Object.wait(Native method)
+                                                                                                    runtime.cc:708]   - waiting on <0x0b9f31b7> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+                                                                                                    runtime.cc:708]   at java.lang.Object.wait(Object.java:405)
+                                                                                                    runtime.cc:708]   at java.lang.Object.wait(Object.java:543)
+                                                                                                    runtime.cc:708]   at java.lang.Daemons$ReferenceQueueDaemon.runInternal(Daemons.java:251)
+                                                                                                    runtime.cc:708]   - locked <0x0b9f31b7> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+                                                                                                    runtime.cc:708]   at java.lang.Daemons$Daemon.run(Daemons.java:131)
+                                                                                                    runtime.cc:708]   at java.lang.Thread.run(Thread.java:1012)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "FinalizerDaemon" prio=5 tid=9 Waiting
+2026-01-07 14:30:50.225   827-827   .edwin.forkdemo         pid-827                              A  runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77980538 self=0xb4000079a80fd330
+                                                                                                    runtime.cc:708]   | sysTid=32191 nice=4 cgrp=default sched=0/0 handle=0x78e1c226b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78e1b1f000-0x78e1b21000 stackSize=1037KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32191: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   at java.lang.Object.wait(Native method)
+                                                                                                    runtime.cc:708]   - waiting on <0x0e781d24> (a java.lang.Object)
+                                                                                                    runtime.cc:708]   at java.lang.Object.wait(Object.java:405)
+                                                                                                    runtime.cc:708]   at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:207)
+                                                                                                    runtime.cc:708]   - locked <0x0e781d24> (a java.lang.Object)
+                                                                                                    runtime.cc:708]   at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:228)
+                                                                                                    runtime.cc:708]   at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:331)
+                                                                                                    runtime.cc:708]   at java.lang.Daemons$Daemon.run(Daemons.java:131)
+                                                                                                    runtime.cc:708]   at java.lang.Thread.run(Thread.java:1012)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "Timer-0" prio=5 tid=17 Waiting
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77980970 self=0xb4000079a8107a10
+                                                                                                    runtime.cc:708]   | sysTid=32224 nice=0 cgrp=default sched=0/0 handle=0x78ef75e6b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78ef65b000-0x78ef65d000 stackSize=1037KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32224: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   at java.lang.Object.wait(Native method)
+                                                                                                    runtime.cc:708]   - waiting on <0x0fdd908d> (a java.util.TaskQueue)
+                                                                                                    runtime.cc:708]   at java.lang.Object.wait(Object.java:405)
+                                                                                                    runtime.cc:708]   at java.lang.Object.wait(Object.java:543)
+                                                                                                    runtime.cc:708]   at java.util.TimerThread.mainLoop(Timer.java:544)
+                                                                                                    runtime.cc:708]   - locked <0x0fdd908d> (a java.util.TaskQueue)
+                                                                                                    runtime.cc:708]   at java.util.TimerThread.run(Timer.java:523)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "Timer-1" prio=5 tid=18 Waiting
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x779809f8 self=0xb4000079a8110520
+                                                                                                    runtime.cc:708]   | sysTid=32225 nice=0 cgrp=default sched=0/0 handle=0x78ef64e6b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78ef54b000-0x78ef54d000 stackSize=1037KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32225: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   at java.lang.Object.wait(Native method)
+                                                                                                    runtime.cc:708]   - waiting on <0x0d6fb242> (a java.util.TaskQueue)
+                                                                                                    runtime.cc:708]   at java.lang.Object.wait(Object.java:405)
+                                                                                                    runtime.cc:708]   at java.lang.Object.wait(Object.java:543)
+                                                                                                    runtime.cc:708]   at java.util.TimerThread.mainLoop(Timer.java:544)
+                                                                                                    runtime.cc:708]   - locked <0x0d6fb242> (a java.util.TaskQueue)
+                                                                                                    runtime.cc:708]   at java.util.TimerThread.run(Timer.java:523)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "Signal Catcher" prio=10 tid=2 WaitingInMainSignalCatcherLoop
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x779802d8 self=0xb4000079a80dc2c0
+                                                                                                    runtime.cc:708]   | sysTid=32185 nice=-20 cgrp=default sched=0/0 handle=0x78e325a6b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78e3163000-0x78e3165000 stackSize=989KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32185: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   (no managed stack frames)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "perfetto_hprof_listener" prio=10 tid=3 Native (still starting up)
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x0 self=0xb4000079a80da6f0
+                                                                                                    runtime.cc:708]   | sysTid=32186 nice=-20 cgrp=default sched=0/0 handle=0x78e21566b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78e205f000-0x78e2061000 stackSize=989KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+2026-01-07 14:30:50.225   827-827   .edwin.forkdemo         pid-827                              A  runtime.cc:708]   native: (Unwind failed for thread 32186: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   (no managed stack frames)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "ADB-JDWP Connection Control Thread" prio=10 tid=4 WaitingInMainDebuggerLoop
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77980350 self=0xb4000079a80d8b20
+                                                                                                    runtime.cc:708]   | sysTid=32187 nice=-20 cgrp=default sched=0/0 handle=0x78e20526b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78e1f5b000-0x78e1f5d000 stackSize=989KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32187: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   (no managed stack frames)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "Jit thread pool worker thread 0" prio=5 tid=5 Native
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x779803c8 self=0xb4000079a80fef00
+                                                                                                    runtime.cc:708]   | sysTid=32188 nice=9 cgrp=default sched=0/0 handle=0x78e1f4e6b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78e1e4f000-0x78e1e51000 stackSize=1021KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32188: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   (no managed stack frames)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "HeapTaskDaemon" prio=5 tid=6 WaitingForTaskProcessor
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77980000 self=0xb4000079a80d6f50
+                                                                                                    runtime.cc:708]   | sysTid=32189 nice=4 cgrp=default sched=0/0 handle=0x78e1e426b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78e1d3f000-0x78e1d41000 stackSize=1037KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32189: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   at dalvik.system.VMRuntime.runHeapTasks(Native method)
+                                                                                                    runtime.cc:708]   at java.lang.Daemons$HeapTaskDaemon.runInternal(Daemons.java:734)
+                                                                                                    runtime.cc:708]   at java.lang.Daemons$Daemon.run(Daemons.java:131)
+                                                                                                    runtime.cc:708]   at java.lang.Thread.run(Thread.java:1012)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "binder:32184_1" prio=5 tid=10 Native
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x779805b0 self=0xb4000079a81026a0
+                                                                                                    runtime.cc:708]   | sysTid=32193 nice=0 cgrp=default sched=0/0 handle=0x78e19046b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78e180d000-0x78e180f000 stackSize=989KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32193: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   (no managed stack frames)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "binder:32184_2" prio=5 tid=11 Native
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77980628 self=0xb4000079a8104270
+                                                                                                    runtime.cc:708]   | sysTid=32194 nice=0 cgrp=default sched=1073741824/0 handle=0x78e18006b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78e1709000-0x78e170b000 stackSize=989KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32194: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   (no managed stack frames)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "binder:32184_3" prio=5 tid=12 Native
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x779806a0 self=0xb4000079a8105e40
+                                                                                                    runtime.cc:708]   | sysTid=32198 nice=0 cgrp=default sched=0/0 handle=0x78e16fc6b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78e1605000-0x78e1607000 stackSize=989KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32198: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   (no managed stack frames)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "32184-ScoutStateMachine" prio=5 tid=13 Native
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77981118 self=0xb4000079a8147f20
+2026-01-07 14:30:50.225   827-827   .edwin.forkdemo         pid-827                              A  runtime.cc:708]   | sysTid=598 nice=0 cgrp=default sched=0/0 handle=0x78e15f86b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78e14f5000-0x78e14f7000 stackSize=1037KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 598: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   at android.os.MessageQueue.nativePollOnce(Native method)
+                                                                                                    runtime.cc:708]   at android.os.MessageQueue.next(MessageQueue.java:355)
+                                                                                                    runtime.cc:708]   at android.os.Looper.loopOnce(Looper.java:203)
+                                                                                                    runtime.cc:708]   at android.os.Looper.loop(Looper.java:337)
+                                                                                                    runtime.cc:708]   at android.os.HandlerThread.run(HandlerThread.java:85)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "ActivityHelper" prio=10 tid=14 Native
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77980718 self=0xb4000079a81095e0
+                                                                                                    runtime.cc:708]   | sysTid=32200 nice=-10 cgrp=default sched=0/0 handle=0x78e14e86b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78e13e5000-0x78e13e7000 stackSize=1037KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32200: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   at android.os.MessageQueue.nativePollOnce(Native method)
+                                                                                                    runtime.cc:708]   at android.os.MessageQueue.next(MessageQueue.java:355)
+                                                                                                    runtime.cc:708]   at android.os.Looper.loopOnce(Looper.java:203)
+                                                                                                    runtime.cc:708]   at android.os.Looper.loop(Looper.java:337)
+                                                                                                    runtime.cc:708]   at android.os.HandlerThread.run(HandlerThread.java:85)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "MiuiMonitorThread" prio=5 tid=15 Native
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77980808 self=0xb4000079a810b1b0
+                                                                                                    runtime.cc:708]   | sysTid=32201 nice=0 cgrp=default sched=0/0 handle=0x78dc1166b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78dc013000-0x78dc015000 stackSize=1037KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32201: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   at android.os.MessageQueue.nativePollOnce(Native method)
+                                                                                                    runtime.cc:708]   at android.os.MessageQueue.next(MessageQueue.java:355)
+                                                                                                    runtime.cc:708]   at android.os.Looper.loopOnce(Looper.java:203)
+                                                                                                    runtime.cc:708]   at android.os.Looper.loop(Looper.java:337)
+                                                                                                    runtime.cc:708]   at android.os.HandlerThread.run(HandlerThread.java:85)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "Profile Saver" prio=5 tid=16 Native
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x779808f8 self=0xb4000079a810cd80
+                                                                                                    runtime.cc:708]   | sysTid=32220 nice=9 cgrp=default sched=0/0 handle=0x787b9436b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x787b84c000-0x787b84e000 stackSize=989KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32220: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   (no managed stack frames)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "RenderThread" prio=10 tid=19 Native
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77980a80 self=0xb4000079a8117460
+                                                                                                    runtime.cc:708]   | sysTid=32234 nice=-10 cgrp=default sched=0/0 handle=0x78ef2a96b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78ef1b2000-0x78ef1b4000 stackSize=989KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32234: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   (no managed stack frames)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "pool-3-thread-1" prio=5 tid=20 Waiting
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77980be8 self=0xb4000079a81252e0
+                                                                                                    runtime.cc:708]   | sysTid=32248 nice=0 cgrp=default sched=0/0 handle=0x78ef3b96b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78ef2b6000-0x78ef2b8000 stackSize=1037KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32248: Thread Does Not Exist)
+2026-01-07 14:30:50.225   827-827   .edwin.forkdemo         pid-827                              A  runtime.cc:708]   at jdk.internal.misc.Unsafe.park(Native method)
+                                                                                                    runtime.cc:708]   - waiting on an unknown object
+                                                                                                    runtime.cc:708]   at java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+                                                                                                    runtime.cc:708]   at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+                                                                                                    runtime.cc:708]   at java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3466)
+                                                                                                    runtime.cc:708]   at java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3437)
+                                                                                                    runtime.cc:708]   at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+                                                                                                    runtime.cc:708]   at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+                                                                                                    runtime.cc:708]   at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1177)
+                                                                                                    runtime.cc:708]   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1237)
+                                                                                                    runtime.cc:708]   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:668)
+                                                                                                    runtime.cc:708]   at java.lang.Thread.run(Thread.java:1012)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "Binder:interceptor" prio=4 tid=21 Native
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77980af8 self=0xb4000079a8126eb0
+                                                                                                    runtime.cc:708]   | sysTid=32236 nice=10 cgrp=default sched=0/0 handle=0x78ef04f6b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78eef4c000-0x78eef4e000 stackSize=1037KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32236: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   at android.os.MessageQueue.nativePollOnce(Native method)
+                                                                                                    runtime.cc:708]   at android.os.MessageQueue.next(MessageQueue.java:355)
+                                                                                                    runtime.cc:708]   at android.os.Looper.loopOnce(Looper.java:203)
+                                                                                                    runtime.cc:708]   at android.os.Looper.loop(Looper.java:337)
+                                                                                                    runtime.cc:708]   at android.os.HandlerThread.run(HandlerThread.java:85)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "FramePredictInitTh" prio=5 tid=22 Native
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77980d58 self=0xb4000079a812c220
+                                                                                                    runtime.cc:708]   | sysTid=32256 nice=0 cgrp=default sched=0/0 handle=0x78ee8fb6b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78ee7f8000-0x78ee7fa000 stackSize=1037KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32256: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   at android.os.MessageQueue.nativePollOnce(Native method)
+                                                                                                    runtime.cc:708]   at android.os.MessageQueue.next(MessageQueue.java:355)
+                                                                                                    runtime.cc:708]   at android.os.Looper.loopOnce(Looper.java:203)
+                                                                                                    runtime.cc:708]   at android.os.Looper.loop(Looper.java:337)
+                                                                                                    runtime.cc:708]   at android.os.HandlerThread.run(HandlerThread.java:85)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "SurfaceSyncGroupTimer" prio=5 tid=23 Native
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77980e48 self=0xb4000079a813d840
+                                                                                                    runtime.cc:708]   | sysTid=32266 nice=0 cgrp=default sched=0/0 handle=0x7876bc56b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x7876ac2000-0x7876ac4000 stackSize=1037KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32266: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   at android.os.MessageQueue.nativePollOnce(Native method)
+                                                                                                    runtime.cc:708]   at android.os.MessageQueue.next(MessageQueue.java:355)
+                                                                                                    runtime.cc:708]   at android.os.Looper.loopOnce(Looper.java:203)
+                                                                                                    runtime.cc:708]   at android.os.Looper.loop(Looper.java:337)
+                                                                                                    runtime.cc:708]   at android.os.HandlerThread.run(HandlerThread.java:85)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "binder:32184_4" prio=5 tid=24 Native
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77980f38 self=0xb4000079a813a0a0
+                                                                                                    runtime.cc:708]   | sysTid=32267 nice=0 cgrp=default sched=1073741824/0 handle=0x7876ab56b0
+2026-01-07 14:30:50.225   827-827   .edwin.forkdemo         pid-827                              A  runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78769be000-0x78769c0000 stackSize=989KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32267: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   (no managed stack frames)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "hwuiTask0" prio=10 tid=25 Native
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77980fb0 self=0xb4000079a812a650
+                                                                                                    runtime.cc:708]   | sysTid=32270 nice=-10 cgrp=default sched=0/0 handle=0x78768ad6b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78767b6000-0x78767b8000 stackSize=989KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32270: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   (no managed stack frames)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "hwuiTask1" prio=10 tid=26 Native
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x77981028 self=0xb4000079a81384d0
+                                                                                                    runtime.cc:708]   | sysTid=32271 nice=-10 cgrp=default sched=0/0 handle=0x78767a96b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x78766b2000-0x78766b4000 stackSize=989KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32271: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   (no managed stack frames)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] "binder:32184_5" prio=5 tid=27 Native
+                                                                                                    runtime.cc:708]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x779810a0 self=0xb4000079a8144780
+                                                                                                    runtime.cc:708]   | sysTid=32282 nice=0 cgrp=default sched=1073741824/0 handle=0x7876cc96b0
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x7876bd2000-0x7876bd4000 stackSize=989KB
+                                                                                                    runtime.cc:708]   | held mutexes=
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32282: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   (no managed stack frames)
+                                                                                                    runtime.cc:708] 
+                                                                                                    runtime.cc:708] Aborting thread:
+                                                                                                    runtime.cc:708] "main" prio=10 tid=1 Runnable
+                                                                                                    runtime.cc:708]   | group="" sCount=0 ucsCount=0 flags=0 obj=0x72f8a438 self=0xb4000079a80d1be0
+                                                                                                    runtime.cc:708]   | sysTid=32184 nice=-10 cgrp=default sched=0/0 handle=0x7bbe789d28
+                                                                                                    runtime.cc:708]   | state=? schedstat=( 0 0 0 ) utm=0 stm=0 core=0 HZ=100
+                                                                                                    runtime.cc:708]   | stack=0x7fd24c5000-0x7fd24c7000 stackSize=8188KB
+                                                                                                    runtime.cc:708]   | held mutexes= "abort lock" "mutator lock"(shared held)
+                                                                                                    runtime.cc:708]   native: (Unwind failed for thread 32184: Thread Does Not Exist)
+                                                                                                    runtime.cc:708]   at android.os.Parcel.nativeWriteStrongBinder(Native method)
+                                                                                                    runtime.cc:708]   at android.os.Parcel.writeStrongBinder(Parcel.java:1285)
+                                                                                                    runtime.cc:708]   at android.app.IActivityManager$Stub$Proxy.handleApplicationWtf(IActivityManager.java:8061)
+                                                                                                    runtime.cc:708]   at com.android.internal.os.RuntimeInit.wtf(RuntimeInit.java:443)
+                                                                                                    runtime.cc:708]   at android.util.Log$1.onTerribleFailure(Log.java:135)
+                                                                                                    runtime.cc:708]   at android.util.Log.wtf(Log.java:343)
+                                                                                                    runtime.cc:708]   at android.util.Log.wtf(Log.java:300)
+                                                                                                    runtime.cc:708]   at android.os.Looper.loopOnce(Looper.java:294)
+                                                                                                    runtime.cc:708]   at android.os.Looper.loop(Looper.java:337)
+                                                                                                    runtime.cc:708]   at android.app.ActivityThread.main(ActivityThread.java:9577)
+                                                                                                    runtime.cc:708]   at java.lang.reflect.Method.invoke(Native method)
+                                                                                                    runtime.cc:708]   at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:593)
+                                                                                                    runtime.cc:708]   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+                                                                                                    runtime.cc:708] 
+2026-01-07 14:30:50.225   827-827   libc                    pid-827                              A  Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 827 (.edwin.forkdemo), pid 827 (.edwin.forkdemo)
